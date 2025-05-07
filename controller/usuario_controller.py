@@ -17,6 +17,7 @@ def usuarios():
 def novo():
     return render_template("index.html")
 
+#Criando a rota para salvar o usuario no banco de dados
 @app.route('/usuarios/salvar', methods=['POST'])
 def create():  
     db = sessionlocal()
